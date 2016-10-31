@@ -44,4 +44,10 @@ for y in range(8):
         pin += str(p)
         if testpin(pin) == True:
                 break
+# credz to grocid for an awesome challenge
+# grocid.net
+
+Output:
+root@lola:~/Desktop/grocid# python brute.py 
+[+] correct pin 7771
 
