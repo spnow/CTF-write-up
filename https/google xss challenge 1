@@ -1,5 +1,0 @@
-Target: https://xss-game.appspot.com/level1/frame
-
-Could not be easier..
-
-https://xss-game.appspot.com/level1/frame?query=<script>alert(1)</script>
